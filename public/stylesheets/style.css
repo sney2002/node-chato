@@ -1,0 +1,162 @@
+body *, body { margin: 0; padding: 0}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 50px;
+}
+
+#note {
+    margin-top: 20px;
+}
+
+#note p {
+    font-weight: bold;
+}
+
+#note ul {
+    margin: 10px 20px;
+}
+
+#copy a {
+    text-decoration: none;
+    color: #050;
+}
+
+#copy {
+    position: fixed;
+    bottom: 0px;
+    margin-left: -100px;
+    padding: 10px 100px;
+    background: #ccc;
+    width: 100%;
+    color: #333;
+}
+
+header h1 {
+    font-size: 33px;
+    font-family: Georgia;
+    -moz-text-shadow: 0 1px 0 #fff;
+    -webkit-text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 1px 0 #fff;
+    color: #3e3e3e;
+    margin-bottom: 15px;
+}
+
+header sup {
+    background: #17280B;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 1px 5px;
+    font-size: .5em;
+    color: #eee;
+}
+
+header input {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#wrap, body, html {
+    height: 100%;
+    margin-left: 30px;
+}
+
+#users {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    background: #2D5016;
+    height: 100%;
+    box-shadow: 0 0 5px #333;
+    -webkit-box-shadow: 0 0 5px #333;
+    -moz-box-shadow: 0 0 5px #333;
+}
+
+#users h4 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#users ul {
+    overflow: scroll;
+    height: 100%;
+}
+
+#users ul li {
+    list-style: none;
+}
+
+#users ul li a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    display: block;
+    padding: 5px 5px 5px 30px;
+}
+
+#users ul li a:hover {
+    background: #17280B;
+}
+
+.chatbox {
+    background: #8DD35F;
+    border: 1px solid black;
+    box-shadow: 1px 0 5px #000;
+    -webkit-box-shadow: 1px 0 5px #000;
+    -moz-box-shadow: 1px 0 5px #000;
+    position: relative;
+    width: 200px;
+    height: 298px;
+    margin-left: 20px;
+    float: left;
+}
+
+.chatbox h4 {
+    text-align: center;
+    padding: 3px;
+}
+
+.close {
+    background: #eee;
+    border: 1px solid black;
+    display: block;
+    padding: 3px 5px;
+    margin: 0 0 3px;
+    cursor: pointer;
+    float: right;
+}
+
+.chatbox ul {
+    width: 198px;
+    border-top: 1px solid black;
+    height: 240px;
+    background: #eee;
+    overflow: scroll;
+}
+
+.chatbox ul li {
+    list-style: none;
+    margin: 5px;
+}
+
+.chatbox input {
+    width: 188px;
+    padding: 5px;
+    border: 1px solid #000;
+    bottom: 0;
+}
+
+#chats {
+    position: fixed;
+    bottom: 40px;
+}
+
+#error {
+    color: #900;
+    margin-left: 10px;
+}

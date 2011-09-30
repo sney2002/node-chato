@@ -1,0 +1,48 @@
+doctype 5
+html
+    title= title
+    link(href='/stylesheets/style.css', rel='stylesheet')
+body
+    header
+        h1= title
+            sup beta
+        label(for='login') Usuario:
+            input(type='text', id='login', placeholder='Nombre de Usuario')
+        input(type='button', id='login-button', value='Entrar')
+        span(id='error')
+    #wrap
+        p Bienvenido 
+            b(id='username')
+            | a #{title}, para iniciar sesión introduzca su nombre en el formulario de arriba.
+        #note
+            p Notas:
+            ul
+                li Esto es solo algo que hice mientras estaba aburrido
+                li Lo subir&eacute; github
+                li Los mensajes no se guardan en ninguna base de datos
+        p#copy Creado por 
+            a(href='http://www.novatoz.com', title='novatoz') Jhonatan Salguero Villa
+            , gracias a
+            a(href='http://www.nodester.com') nodester
+            |  por el hosting
+
+        #users
+            h4 Usuarios Conectados
+            ul
+        
+        #chats
+        script(type='text/x-jquery-tmpl', id='users-tmpl')
+            <li><a href='#' class='${uid}'>${nick}</a></li>
+        script(type='text/x-jquery-tmpl', id='chatbox-tmpl').
+            <div id='${uid}' class="chatbox">
+                <h4>${nick}<span class='close'>X</span></h4>  
+                <ul></ul>
+                <input type="text" name="" value="" />
+            </div>
+        script(type='text/x-jquery-tmpl', id='msg-tmpl').
+            <li><b>${from}:</b> ${msg}</li>
+        script(src='/socket.io/socket.io.js')
+        script(src='/javascripts/jquery.js')
+        script(src='/javascripts/jquery.tmpl.min.js')
+        script(src='/javascripts/jquery.emoticons.js')
+        script(src='/javascripts/app.js')
